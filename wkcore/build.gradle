@@ -1,0 +1,52 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation var.SupportTestRunner
+    androidTestImplementation var.SupportTestEspresso
+    api "com.android.support:appcompat-v7:$rootProject.ext.supportLibraryVersion"
+
+
+    api 'com.android.support:multidex:+'
+
+    api ("com.github.bumptech.glide:glide:3.7.0") {
+        exclude group: "com.android.support"
+    }
+
+    api 'com.google.code.gson:gson:2.5'
+
+    api 'org.greenrobot:eventbus:3.1.1'
+    //ForRecyclerView
+    api ('com.zhy:base-rvadapter:3.0.3'){
+        exclude group: 'com.android.support'
+    }
+
+    api ('com.yanzhenjie:permission:2.0.0-rc5'){
+        exclude group: 'com.android.support'
+    }
+
+
+}
