@@ -19,6 +19,10 @@ import java.util.Date;
  * <p>
  * 更新时间 2017/2/23
  * 更新描述 ${TODO}
+ *
+ *          LogToFileUtils.init(AcsApplication.getContext());
+ *          String logStr = "";
+ *          LogToFileUtils.write(logStr, time);
  */
 
 public class LogToFileUtils {

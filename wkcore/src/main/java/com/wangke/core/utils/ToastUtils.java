@@ -4,7 +4,7 @@ import android.os.Handler;
 import android.view.Gravity;
 import android.widget.Toast;
 
-import com.zghl.core.UtilsLib;
+import com.wangke.core.WkCoreLib;
 
 /**
  * ToastUtils.java
@@ -28,7 +28,7 @@ public class ToastUtils {
         if (sToast != null){
             sToast.setText(msg);
         }else{
-            sToast = Toast.makeText(UtilsLib.getInstance(),msg,duration);
+            sToast = Toast.makeText(WkCoreLib.getInstance(),msg,duration);
         }
         sToast.setGravity(Gravity.BOTTOM, 0, 100);
         if(duration == Toast.LENGTH_LONG){
@@ -41,10 +41,10 @@ public class ToastUtils {
     }
 
     public static void show(int msg,int duration){
-        show(UtilsLib.getInstance().getResources().getString(msg), duration);
+        show(WkCoreLib.getInstance().getResources().getString(msg), duration);
     }
     public static  void show(int msg){
-        show(UtilsLib.getInstance().getResources().getString(msg), Toast.LENGTH_LONG);
+        show(WkCoreLib.getInstance().getResources().getString(msg), Toast.LENGTH_LONG);
     }
 
     public static  void show(String msg){
