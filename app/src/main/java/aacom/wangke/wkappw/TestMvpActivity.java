@@ -10,7 +10,7 @@ import com.wangke.core.basemvp.BaseMVPActivity;
 import aacom.wangke.wkappw.testmvp.TestContract;
 import aacom.wangke.wkappw.testmvp.TestPresenterImpl;
 
-public class MainActivity extends BaseMVPActivity<TestContract.TestPresenter>implements TestContract.TestView {
+public class TestMvpActivity extends BaseMVPActivity<TestContract.TestPresenter>implements TestContract.TestView {
 
     private Button mBtnSd;
     private Button mBtnNet;
