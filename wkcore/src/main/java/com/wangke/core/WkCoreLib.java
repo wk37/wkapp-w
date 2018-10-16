@@ -2,6 +2,8 @@ package com.wangke.core;
 
 import android.content.Context;
 
+import com.wangke.core.utils.LSSpUtil;
+
 public class WkCoreLib {
 
     private static Context mContext;
@@ -9,6 +11,7 @@ public class WkCoreLib {
     public static void init(Context context,boolean isDebug){
         mContext = context;
 //        LogUtil.setDebug(isDebug);
+        LSSpUtil.init(context);
     }
 
     public static Context getInstance(){

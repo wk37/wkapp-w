@@ -32,7 +32,7 @@ dependencies {
 
     api 'com.android.support:multidex:+'
 
-    api ("com.github.bumptech.glide:glide:3.7.0") {
+    api("com.github.bumptech.glide:glide:3.7.0") {
         exclude group: "com.android.support"
     }
 
@@ -40,13 +40,22 @@ dependencies {
 
     api 'org.greenrobot:eventbus:3.1.1'
     //ForRecyclerView
-    api ('com.zhy:base-rvadapter:3.0.3'){
+    api('com.zhy:base-rvadapter:3.0.3') {
         exclude group: 'com.android.support'
     }
 
-    api ('com.yanzhenjie:permission:2.0.0-rc5'){
+    api('com.yanzhenjie:permission:2.0.0-rc5') {
         exclude group: 'com.android.support'
     }
+
+
+
+    api "io.reactivex.rxjava2:rxjava:2.1.12" // 必要rxjava2依赖
+    api "io.reactivex.rxjava2:rxandroid:2.0.2" // 必要rxandrroid依赖，切线程时需要用到
+    api 'com.squareup.retrofit2:retrofit:2.4.0'
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.4.0' // 必要依赖，和Rxjava结合必须用到，下面会提到
+    api 'com.squareup.retrofit2:converter-gson:2.3.0' // 必要依赖，解析json字符所用
+    api 'com.squareup.okhttp3:logging-interceptor:3.8.1' //非必要依赖， log依赖，如果需要打印OkHttpLog需要添加
 
 
 }
