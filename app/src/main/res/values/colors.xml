@@ -3,4 +3,31 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+
+
+
+
+
+    <color name="btn_blue2">#527bff</color>
+    <color name="btn_blue3">#3f65dd</color>
+
+
+
+
+
+
+
+
+
+    <color name="blue_295">#295ab4</color>
+    <color name="blue_3c7">#3c7af2</color>
+    <color name="blue_light_eff4ff">#eef4ff</color>
+    <color name="green_01b">#01bcaf</color>
+    <color name="green_light_eefcfa">#eefcfa</color>
+    <color name="yellow_ffd">#ffd800</color>
+    <color name="yellow_light_fffde2">#fffde2</color>
+    <color name="pink_fc8">#fc8888</color>
+
+
 </resources>

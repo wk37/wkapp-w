@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">wkapp-w</string>
+
+    <string name="jump">跳过</string>
+
+    <string name="start">立即使用</string>
+
 </resources>

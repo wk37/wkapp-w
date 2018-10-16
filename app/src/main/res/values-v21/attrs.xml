@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="CustomCircleProgressBar">
+        <attr name="inside_color" format="color" />
+        <attr name="progress_width" format="dimension" />
+        <attr name="max_progress" format="integer" />
+        <attr name="outside_radius" format="dimension" />
+    </declare-styleable>
+
+
+
+</resources>
