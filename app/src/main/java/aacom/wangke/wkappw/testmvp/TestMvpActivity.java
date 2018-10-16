@@ -1,4 +1,4 @@
-package aacom.wangke.wkappw;
+package aacom.wangke.wkappw.testmvp;
 
 import android.os.Bundle;
 import android.view.View;
@@ -7,10 +7,9 @@ import android.widget.TextView;
 
 import com.wangke.core.basemvp.BaseMVPActivity;
 
-import aacom.wangke.wkappw.testmvp.TestContract;
-import aacom.wangke.wkappw.testmvp.TestPresenterImpl;
+import aacom.wangke.wkappw.R;
 
-public class MainActivity extends BaseMVPActivity<TestContract.TestPresenter>implements TestContract.TestView {
+public class TestMvpActivity extends BaseMVPActivity<TestContract.TestPresenter>implements TestContract.TestView {
 
     private Button mBtnSd;
     private Button mBtnNet;

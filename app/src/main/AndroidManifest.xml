@@ -2,20 +2,56 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="aacom.wangke.wkappw">
 
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:name=".WkApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+        <activity
+            android:name=".login.SplashActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/sign_SplashTheme"
+            android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+                <!-- <category android:name="android.intent.category.HOME" />-->
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".login.WelcomeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/sign_WelcomeTheme"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".main.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".login.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".testmvp.TestMvpActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+
     </application>
 
 </manifest>
